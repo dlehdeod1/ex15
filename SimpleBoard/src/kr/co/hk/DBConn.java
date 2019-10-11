@@ -9,8 +9,8 @@ public class DBConn {
 	public static Connection getConnction() throws Exception {
 		Class.forName("oracle.jdbc.OracleDriver");
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String username = "hr";
-		String password = "hkitedu";
+		String username = "shopping";
+		String password = "hkit2019";
 		Connection con = DriverManager.getConnection(url,username,password);
 		System.out.println("연결 성공!!");
 		return con;
